@@ -1,11 +1,15 @@
 @media (max-width: 767px) {
   .navbar-brand {
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
-  .navbar-brand img {
-    margin-right: 8px;
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  /* Show the toggler button */
+  .navbar-toggler {
+    display: block;
   }
 }
 
