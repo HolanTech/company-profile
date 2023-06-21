@@ -1,17 +1,4 @@
-@media (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
 
-  .navbar-collapse {
-    display: none !important;
-  }
-
-  /* Show the toggler button */
-  .navbar-toggler {
-    display: block;
-  }
-}
 
 .banner {
   padding-top: 30%;
