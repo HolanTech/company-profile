@@ -3,29 +3,20 @@
   padding-bottom: 30%;
   color: #fff;
   background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
   background-position: center;
   background-size: cover;
   height: 500px; /* Atur tinggi sesuai kebutuhan Anda */
 }
+.carousel-item .container.text-center h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
 
-/* .lingkaran {
-  display: inline-block;
-  border-radius: 50%;
-  width: 150px;
-  margin: auto;
-  height: 150px;
-  color: #fff;
-  background-color: #dc3545;
-} */
-/* 
-.lingkaran i {
-  position: relative;
-  top: 30px;
-} */
-
-/* .crop-img {
-  object-fit: cover;
-} */
+.carousel-item .container.text-center p {
+  text-shadow: 2px 2px 4px rgba(1, 0, 0, 0.5), 0 0 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
 
 .kontak {
   background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat center center;
@@ -33,4 +24,7 @@
   padding-bottom: 20%;
   padding-top: 20%;
   color: #fff;
+}
+.p {
+  text-align: justify;
 }

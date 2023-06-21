@@ -106,7 +106,7 @@
                 <br />
                 <img src="img/layanan1.jpg" alt="" width="320px" height="200px" />
                 <p class="card-text">Layanan kami meliputi General Supply, konstruksi, peralatan mekanik dan listrik, keamanan, furnitur kantor, peralatan rumah tangga, serta sparepart alat berat dan lighting tower lampu.</p>
-                <a href="halaman_programming.html" class="btn btn-primary">Lihat lebih lanjut</a>
+                <a href="layanan.html" class="btn btn-primary">Lihat lebih lanjut</a>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@
                 <p class="card-text">
                   Layanan kami untuk memperbaiki pompa hidraulik dengan semua komponen pabrikan.kami memastikan semua unit pompa hidrolik diuji untuk spesifikasi pabrik oleh teknisi pompa hidraulik terlatih dengan pengalaman
                 </p>
-                <a href="halaman_design.html" class="btn btn-primary">Lihat lebih lanjut</a>
+                <a href="layanan.html" class="btn btn-primary">Lihat lebih lanjut</a>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@
                   Layanan Heavy Duty Service kami adalah jawaban untuk perawatan terbaik kendaraan Anda. Dengan keahlian dalam Perbaikan, Overhaul, dan Penggantian Mesin Diesel, kami siap memberikan solusi terpercaya bagi peralatan berat
                   Anda.
                 </p>
-                <a href="halaman_design.html" class="btn btn-primary">Lihat lebih lanjut</a>
+                <a href="layanan.html" class="btn btn-primary">Lihat lebih lanjut</a>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@
                   Layanan kami menyediakan fabrikasi peralatan berat, termasuk fabrikasi komponen dump truck seperti front wall dan bucket. Kami juga menghasilkan cabin guard, front bumper, fuel tank, serta melakukan fabrikasi dan perakitan
                   vessel untuk big dump truck.
                 </p>
-                <a href="halaman_networking.html" class="btn btn-primary">Lihat lebih lanjut</a>
+                <a href="layanan.html" class="btn btn-primary">Lihat lebih lanjut</a>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
                 <h3 class="card-title mt-3">INFORMATION TECHNOLOGY (IT)</h3>
                 <img src="img/layanan5.png" alt="" width="320px" height="200px" />
                 <p class="card-text">Layanan kami yang menyediakan pembuatan aplikasi mobile, maintenance jaringan, pembuatan website, infrastruktur komputasi dan jaringan, sistem keamanan, dan komunikasi radio.</p>
-                <a href="halaman_networking.html" class="btn btn-primary">Lihat lebih lanjut</a>
+                <a href="layanan.html" class="btn btn-primary">Lihat lebih lanjut</a>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@
                   adalah visi kami yang ingin menjadi untuk mrnjadi perusahaan yang bisa diandalkan.
                 </p>
                 <div class="text-center mt-3">
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <a href="tentang.html" class="btn btn-primary">Learn More</a>
                 </div>
               </div>
             </div>
@@ -245,32 +245,38 @@
     <!-- klien end -->
     <!-- kontak start-->
     <div class="container-fluid pt-5 pb-5 kontak">
-      <div class="container">
-        <h2 class="display-3 text-center" id="kontak">kontak</h2>
-        <p class="text-center">Hubungi kami di:</p>
-        <div class="text-center">
-          <a href="https://api.whatsapp.com/send?phone=6285246696270" target="_blank" class="btn btn-success">WhatsApp</a>
-        </div>
-        <p class="text-center">Atau</p>
-        <div class="row pb-3">
-          <div class="col-md-6">
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Nama" />
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
-            <input class="form-control form-control-lg" type="text" placeholder="No. Phone" />
+      <div class="container d-flex justify-content-center">
+        <div class="col-md-6">
+          <h2 class="display-3 text-center" id="kontak">kontak</h2>
+          <p class="text-center">Hubungi kami di:</p>
+          <div class="text-center">
+            <a href="https://api.whatsapp.com/send?phone=6285246696270" target="_blank" class="btn btn-success">WhatsApp</a>
           </div>
-          <div class="col-md-6">
-            <textarea class="form-control form-control-lg" rows="5"></textarea>
+          <p class="text-center">Atau</p>
+          <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+            <strong>Terima kasih!</strong> Pesan anda sudah kami terima
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="text-center">
-          <button type="button" class="btn btn-danger btn-lg">Kirim Pesan</button>
+          <form name="submit-to-google-sheet-from-company-profile" action="https://script.google.com/macros/s/AKfycbzRjOuN3ABr1SBRkYQCnw01xh_FzUk_VZVKyAqpFjEy-7olZVqV89E057IjKafhHki-0w/exec" method="post">
+            <input name="nama" class="form-control form-control-lg mb-3" type="text" placeholder="Nama" required />
+            <input name="email" class="form-control form-control-lg mb-3" type="email" placeholder="Email" required />
+            <input name="telepon" class="form-control form-control-lg" type="tel" placeholder="No. Phone" required />
+            <textarea name="pesan" class="form-control form-control-lg" rows="5" required></textarea>
+            <div class="text-center">
+              <br />
+              <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </div>
+          </form>
         </div>
       </div>
+      <!-- footer start -->
+      <div class="container text-center pt-5 pb-5">CV. ADCHA ZULKARNAEN JL. SEPINGGAN BARU PERUM GRIYA NUR EKA NO 04 RT 17 BALIKPAPAN 76115 TELP : 0852-4669-6270</div>
+      <!-- footer end -->
     </div>
-    <!-- kontak end-->
-    <!-- footer start -->
-    <div class="container text-center pt-5 pb-5">CV. ADCHA ZULKARNAEN JL. SEPINGGAN BARU PERUM GRIYA NUR EKA NO 04 RT 17 BALIKPAPAN 76115 TELP : 0852-4669-6270</div>
-    <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
@@ -279,6 +285,32 @@
       setInterval(function () {
         $("#carouselExample").carousel("next");
       }, 2000);
+    </script>
+    <script>
+      const form = document.forms["submit-to-google-sheet-from-company-profile"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        //ketika tombol submit di klik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(form.action, { method: "POST", body: new FormData(form) })
+          .then(response => {
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan alert
+            myAlert.classList.toggle("d-none");
+            //reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch(error => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
