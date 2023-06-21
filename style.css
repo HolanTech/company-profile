@@ -39,3 +39,22 @@
 .p {
   text-align: justify;
 }
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.animated-image img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-image img:hover {
+  transform: scale(2);
+}
