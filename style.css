@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+  .navbar-brand .logo-text {
+    display: none;
+  }
+
+  .navbar-brand {
+    justify-content: center;
+  }
+  .table {
+    font-size: 12px;
+  }
+}
 .banner {
   padding-top: 30%;
   padding-bottom: 30%;
@@ -25,9 +37,7 @@
   padding-top: 20%;
   color: #fff;
 }
-.p {
-  text-align: justify;
-}
+
 .card img {
   max-width: 100%;
   height: auto;
@@ -46,4 +56,21 @@
 
 .animated-image img:hover {
   transform: scale(2);
+}
+.table {
+  width: 100%;
+  font-size: 14px;
+}
+.justifikasi {
+  text-align: justify;
+}
+.card1 {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-tabs {
+  width: 100%;
+  justify-content: space-between;
 }
