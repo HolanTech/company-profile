@@ -285,12 +285,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@4.1.1/dist/scrollreveal.min.js"></script>
-    <script>
-      // Menjalankan slider otomatis setiap 2 detik
-      setInterval(function () {
-        $("#carouselExample").carousel("next");
-      }, 2000);
-    </script>
+      <script>
+      // Pastikan kode dijalankan setelah halaman selesai dimuat
+      $(document).ready(function() {
+          // Menjalankan slider otomatis setiap 2 detik
+          setInterval(function () {
+              $("#carouselExample").carousel("next");
+          }, 2000);
+      });
+  </script>
     <script>
       const form = document.forms["submit-to-google-sheet-from-company-profile"];
       const btnKirim = document.querySelector(".btn-kirim");
